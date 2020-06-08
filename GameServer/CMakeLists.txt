@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 2.6)
 
 project(GameServer)
 
+find_package(Boost QUIET REQUIRED COMPONENTS program_options)
+
 #cmake -DMAKE_BUILD_TYPE=Debug|Release
 #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 #set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS} -Wall -g -DDEBUG -D_DEBUG")
@@ -85,5 +87,8 @@ foreach(TMP_PATH ${SRC})
 endforeach(TMP_PATH)
 
 add_executable((XXBuildTest.${PROJECT_NAME} ${SRC})
+
+target_link_libraries(helloworld PUBLIC Boost::program_options)
+
 
 
