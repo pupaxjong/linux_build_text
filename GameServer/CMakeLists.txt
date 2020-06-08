@@ -30,6 +30,7 @@ if(LINUX)
 		/usr/include/mysql56
 	)
 	link_directories(
+		/usr/local/lib
 		/usr/lib64/mysql
 		/usr/lib64/mysql56
 		/usr/lib/x86_64-linux-gnu
