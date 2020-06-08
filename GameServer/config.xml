@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<server name="XXBuildTest.GameServer">
+	<log path="_log" prefix="XX_GAME" max_file_size="5">
+		<dev console="yes" file="yes" sys="no"/>
+		<inf console="yes" file="yes" sys="no"/>
+		<wrn console="yes" file="yes" sys="no"/>
+		<err console="yes" file="yes" sys="no"/>
+	</log>
+</server>
